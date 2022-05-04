@@ -19,7 +19,8 @@ Las siguientes funcionalidades son requisitos mínimos necesarios para la aproba
 * La aplicación deberá contar con dos componentes:
   
   1 - Componente de detalle funcional
-        * Este componente mostrá el detalle de el pokemon haciendo uso de hooks basicos del ciclo de vida de reactJS.
+  
+          * Este componente mostrá el detalle de el pokemon haciendo uso de hooks basicos del ciclo de vida de reactJS.
             * Se espera uso de useEffect para cuando se monta el componente
             * Se espera uso de useEffect para cuando se actualiza una variable o estado del componente
             * Se espera definicion y el uso de un estado de este componente con useState
