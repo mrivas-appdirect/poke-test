@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import DetailFunctional from './components/Detail/DetailFunctional';
+import DetailClass from './components/Detail/DetailClass';
+import { useEffect, useState } from 'react';
+import { fetchPokemonApi } from './api/pokemon';
 
 function App() {
+  const [pokemonName, setPokemonName] = useState('ditto');
+
+  const [pokeDescription, setPokeDescription] = useState({});
+
+
+  const fetchPokemon = async () => {
+    const description = await fetchPokemonApi(pokemonName);
+    setPokeDescription(description);
+  }
+
+  useEffect(() => {
+    fetchPokemon();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DetailFunctional pokemon={pokeDescription}/>
+      <DetailClass pokemon={pokeDescription}/>
     </div>
   );
 }
