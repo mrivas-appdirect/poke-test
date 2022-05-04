@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# PokeAPI
+A journey into AppDirect - reactJS 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Indice
+* [Funcionalidades](#funcionalidades)
+  * [Funcionalidades obligatorias](#funcionalidades-obligatorias)
+  * [Funcionalidades extras](#funcionalidades-extras)
+* [Notas](#notas)
+* [Instalacion del proyecto](#instalación-del-proyecto)
+  * [Iniciando la App](#iniciando-la-app)
 
-## Available Scripts
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+### Funcionalidades obligatorias
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Las siguientes funcionalidades son requisitos mínimos necesarios para la aprobación del ejercicio y es fundamental que funcionen correctamente.
+ 
+* La aplicación deberá contar con dos componentes:
+  
+  1 - Componente de detalle funcional
+        * Este componente mostrá el detalle de el pokemon haciendo uso de hooks basicos del ciclo de vida de reactJS.
+            * Se espera uso de useEffect para cuando se monta el componente
+            * Se espera uso de useEffect para cuando se actualiza una variable o estado del componente
+            * Se espera definicion y el uso de un estado de este componente con useState
+            * Se espera uso de las props recibidas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  2 - Componente de detalle como clase
 
-### `npm test`
+          * Este componente mostrá el detalle de el pokemon haciendo uso de clases y utilizando los metodos basicos del ciclo de vida de reactJS.
+            * Se espera uso de componentDidMount
+            * Se espera uso de componentDidUpdate
+            * Se espera el uso de un constructor
+            * Se espera definicion y el uso de un estado de este componente
+            * Se espera uso de las props recibidas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Comportamiento de la pagina definida en App.js 
+        *  En App.js se hara la API call a PokeAPI y el resultado de la misma se deberá pasar a los componentes mencionados previamente.
+        (Esta funcionalidad ya esta funcionando en el ejemplo)
+    
 
-### `npm run build`
+### Funcionalidades extras
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Los siguientes aspectos son extras al requisito mínimo de aprobación que serán tenidos en cuenta como `Nice to have`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    * Loading state
+        * Seria de mucha ayuda indicarle al usuario que el componente de detalle esta cargando
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    * Error state
+        * Seria de mucha ayuda indicarle al usuario si hubo un error al conectar con la API o si fallo esta misma
 
-### `npm run eject`
+    * Custom Hook
+        * Como es el proceso para crear un hook nuevo ? Te animas a crear un custom hook ?
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Notas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    * La arquitectura presentada es un modelo, tanto nombres de componentes como la misma arquitectura puede ser cambiada a gusto del dev a cargo del desarrollo.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Instalación del proyecto
 
-## Learn More
+### Iniciando la App
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Instalamos las dependencias
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`npm install`
 
-### Code Splitting
+Podemos iniciar nuestra aplicación con el comando
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+`npm run start`
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Mucha suerte y éxitos! 
